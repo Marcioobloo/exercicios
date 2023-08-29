@@ -1,18 +1,19 @@
 <?php
 
-$f = readline("escreva o final da linha: ");
-$primeiro = 0;
-$segundo = 1;
-$cont = 0;
-$soma = 0;
+    
+    echo "Q9. Ok! 
+    Como eu auxiliei nessa questão, experimente implementar com outros elementos de logica, como for e array. \n";
 
+    $termo_final = readline("Escreva o termo final de Fibbonacci: ");
+    $primeiro = 0;
+    $segundo = 1;
+    $cont = 0;
+    $soma = 0;
+    echo $primeiro . ", " . $segundo . ", ";
 
-    while ($cont != $f):
+    while ($cont != $termo_final):
 
         echo $primeiro + $segundo. ", ";
-
-
-        // echo ",primeiro numero: ".$primeiro. ",segundo número: ". $segundo."\n";
         $soma = $primeiro + $segundo;
         $primeiro = $segundo;
         $segundo = $soma;
