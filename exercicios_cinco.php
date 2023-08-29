@@ -1,6 +1,11 @@
 <?php
 
-    // questão 5/5.1)
+
+    echo "Q5:Faltam DOIS detalhes! \n";
+    echo "1. O resultado final é apenas a última potência \n";
+    echo "2. O bloco de código faz a operação 1 vez a mais que o desejado. Ex.: 2³ = 16 \n";
+    
+    // // questão 5/5.1)
 
     // $base = readline('digite a base: ');
     // $expoente = readline('digite o expoente: ');
@@ -20,51 +25,76 @@
 
 //    =================================================================================
 
-    // questão 6/5.2)
+    echo "Q6:OK! Fiz alterações curtas só para deixar mais limpo. \n";
 
-//     $i = 5;
-// $resultado = 1;
+    // // questão 6/5.2)
 
-//     while ($i > 1):
-//         echo "Valor de i = ". $i. "\n";
+    // $i = readline("Informe número inteiro para calcularmos fatorial:");
+    // $resultado = 1;
 
-//         $resultado = $resultado * $i;
-//         echo "Valor do resultado = ". $resultado. "\n";
-//         $i--;
-//     endwhile;
+    // while ($i > 1):
+    //     $resultado = $resultado * $i;
+    //     $i--;
+    // endwhile;
+    
+    // echo "Valor do resultado = ". $resultado. "\n";
 
 
 //    =================================================================================
 
-    // questão 7/5.3)
-        // $i = readline("entre valor: ");
-        // $resultado = 1;
+// 
+    echo "Q7:Incompleto! Faltando laço externo para digitar repetidas vezes. \n";
+    echo "Passo a passo lógico abaixo \n";
 
-        // while($i > 0 && $i <16){
-        //     echo "Valor de i = ". $i. "\n";
+    /** 
+     * Questão 7: Fatorial em Loop
+     * 1. Digitar fatorial a calcular, N
+     * 2. Loop de repetição: 
+     *    2.1. Se (0 < N < 16): Repetir
+     *    2.1.2. Calcula fatorial de N
+     *    2.1.3. Digitar fatorial N novamente
+     *    2.1.4. Volta para passo 2
+     * 
+     * 
+     *    2.2. Se não:
+     *      Informar valor inválido
+     *      Parar execução
+    */
 
-        // $resultado = $resultado * $i;
-        // echo "Valor do resultado = ". $resultado. "\n";
-        // $i--;
-        // } echo "valor inserido não é permitido";
+
+    // // questão 7/5.3)
+    // $i = readline("entre valor: ");
+    // $resultado = 1;
+
+    // while($i > 0 && $i <16){
+    //     echo "Valor de i = ". $i. "\n";
+
+    //     $resultado = $resultado * $i;
+    //     echo "Valor do resultado = ". $resultado. "\n";
+    //     $i--;
+    // } 
+    // echo "valor inserido não é permitido";
 
 
 
 //    =================================================================================
 
     // questão 8/5.4)
-        // $numero_um = readline('Montar uma tabuada de: ');
-        // $comeco = readline('começar por: ');
-        // $termino = readline('Terminar em: ');
 
-        // $resultado = 1;
+    echo "Q8:Ok! \n";
+ 
+        $numero_um = readline('Montar uma tabuada de: ');
+        $comeco = readline('começar por: ');
+        $termino = readline('Terminar em: ');
 
-        // while($comeco <= $termino){
-        //     $resultado = $numero_um * $comeco;
-        //     $comeco = $comeco + 1;
+        $resultado = 1;
 
-        //     echo $resultado. "\n";
+        while($comeco <= $termino){
+            $resultado = $numero_um * $comeco;
+            $comeco = $comeco + 1;
 
-        // }
+            echo $resultado. "\n";
+
+        }
 
 ?>
